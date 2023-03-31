@@ -31,7 +31,7 @@
 
 DROP DATABASE IF EXISTS TEP_WAM;
 CREATE DATABASE TEP_WAM;
-USE TEP_THOMAS;
+USE TEP_WAM;
 -- ------------------------
 -- ---   TABLE PROPRIO ------
 -- ------------------------
