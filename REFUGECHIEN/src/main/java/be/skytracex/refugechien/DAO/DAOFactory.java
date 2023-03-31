@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class DAOFactory {
         private static final String driver = "com.mysql.cj.jdbc.Driver";
-    private static final String url = "jdbc:mysql://localhost:3306/TEP_Thomas";
+    private static final String url = "jdbc:mysql://localhost:3306/TEP_WAM";
     //nom de la base de donnée
     private static final String user = "root";
     private static final String pwd = "";
