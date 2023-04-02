@@ -62,7 +62,6 @@ public class DAO_REFUGE extends DAO<Refuge,Integer>{
         ps.setString(1, obj.getNom());
         ps.setString(2, obj.getAdresse());
         ps.setString(3, obj.getNumTel());
-        ps.setInt(4, (obj.getId()));
 
         try {
             ps.executeUpdate();

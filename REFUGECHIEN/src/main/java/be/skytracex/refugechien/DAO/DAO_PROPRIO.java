@@ -58,7 +58,8 @@ public class DAO_PROPRIO extends DAO<Proprio,Integer>{
         ps.setInt(3, obj.getIdProprio());
         
         ps.executeUpdate();
-        
+        JOptionPane.showMessageDialog(null,
+                "Proprio mis a jour : \n " +obj);
         return FindByID(obj.getIdProprio());
         
     }

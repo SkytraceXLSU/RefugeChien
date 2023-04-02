@@ -49,8 +49,7 @@ CREATE TABLE REFUGE(
 	ID_Refuge int UNSIGNED NOT NULL PRIMARY KEY auto_increment,
 	Nom_Refuge varchar(30) NOT NULL,
 	Adresse_Refuge varchar(70) NOT NULL,
-	Num_Tel_Refuge varchar(13) NOT NULL,
-	Place_Refuge int(3) NOT NULL
+	Num_Tel_Refuge varchar(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- ------------------------
 -- ---   TABLE CHIEN ------
@@ -73,12 +72,12 @@ CREATE TABLE CHIEN(
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO PROPRIO(ID_Proprio, Nom_Proprio, Adresse_Proprio) VALUES
 (1,"Aucun", "Aucun"),
-(2,"Leon S. Kenedy", "Rue du bout du monde 500");
--- (3,"Jhon Doh", "Rue de Ricoré 501");
+(2,"Leon S. Kenedy", "Rue du Gonador 500"),
+(3,"Jhon Doh", "Rue de Ricoré 501");
 
-INSERT INTO REFUGE(ID_Refuge ,Nom_Refuge, Adresse_Refuge, Num_Tel_Refuge,Place_refuge) VALUES
-(1,"Sky-Dogs life","Rue de Ville 85 ,Bruxelle", "081306932",10),
-(2,"Dogs Wart ","Rue de Quartier 69 ,Charleroi","081303252",14);
+INSERT INTO REFUGE(ID_Refuge ,Nom_Refuge, Adresse_Refuge, Num_Tel_Refuge) VALUES
+(1,"Saddler's Island","Rue de L'usine 85 ,Bruxelle", "081306932"),
+(2,"Salazrd's Castle","Rue des Douve 69 ,Charleroi","081303252");
 
 INSERT INTO CHIEN(ID_Chien , Nom_Chien ,Date_Chien ,Sex_Chien ,Race_Chien ,Steril_Chien ,Date_Entre_Chien ,Date_Sortie_Chien ,ID_Proprio_Chien ,ID_Refuge_Chien) VALUES 
 (1,  "Nina",str_to_date('09-11-2004','%d-%m-%Y'), 'Femelle',"Chihuahua", true, str_to_date('07-08-2023','%d-%m-%Y'),null,1,'1'),
